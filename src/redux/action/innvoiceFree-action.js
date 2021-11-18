@@ -4,7 +4,7 @@ import { GET_INNV } from '../action-types/innvoice-action-types'
 
 export const getAllinnvoice =() => async (dispatch) =>{
     await
-    axios.get(`http://localhost:5000/api/auth/freelancer/innvoice/all`)
+    axios.get(`https://mern-freelancer-app.herokuapp.com/api/auth/freelancer/innvoice/all`)
     .then((res)=>
     dispatch({
         type:GET_INNV,
@@ -15,7 +15,7 @@ export const getAllinnvoice =() => async (dispatch) =>{
 }
 export const  getInprocess = (freelancerId)=>async(dispatch)=>{
     await
-    axios.get(`http://localhost:5000/api/auth/freelancer/innvoice/findInprocess/${freelancerId}`)
+    axios.get(`https://mern-freelancer-app.herokuapp.com/api/auth/freelancer/innvoice/findInprocess/${freelancerId}`)
     .then((res)=>dispatch(getAllinnvoice()))
     .catch((error)=>console.log(error))
 }
@@ -24,7 +24,7 @@ export const  getInprocess = (freelancerId)=>async(dispatch)=>{
 
 export const sendInnvoice = async (innvoiceId,freelancerId)=>async(dispatch)=>{
     await
-    axios.patch(`http://localhost:5000/api/auth/freelancer/innvoice/status/${innvoiceId}`,{freelancerId})
+    axios.patch(`https://mern-freelancer-app.herokuapp.com/api/auth/freelancer/innvoice/status/${innvoiceId}`,{freelancerId})
     .then((res)=>dispatch(getAllinnvoice()))
     .catch((error)=>console.log(error))
 }

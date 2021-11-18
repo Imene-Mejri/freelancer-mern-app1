@@ -3,7 +3,7 @@
  /////http://localhost:5000/api/auth/all
 export const alluser =()=>async(dispatch)=>{
     try {
-      const res = await axios.get("http://localhost:5000/api/auth/all")
+      const res = await axios.get("https://mern-freelancer-app.herokuapp.com/api/auth/all")
       dispatch({
         type : GET_ALL,
         payload : res.data
@@ -14,7 +14,7 @@ export const alluser =()=>async(dispatch)=>{
   }
   export const deleteProfile =(id)=>async(dispatch)=>{
     await
-    axios.delete(`http://localhost:5000/api/auth/deleteProfile/${id}`)
+    axios.delete(`https://mern-freelancer-app.herokuapp.com/api/auth/deleteProfile/${id}`)
     .then((res)=>dispatch(alluser()))
     .catch((error)=>console.log(error))
 }
@@ -22,7 +22,7 @@ export const alluser =()=>async(dispatch)=>{
 
 export const updateProfile =(id,user)=>async(dispatch)=>{
     await
-    axios.put(`http://localhost:5000/api/auth/updateProfile/${id}`,user)
+    axios.put(`https://mern-freelancer-app.herokuapp.com/api/auth/updateProfile/${id}`,user)
     .then((res)=>dispatch(alluser()))
     .catch((error)=>console.log(error))
 }

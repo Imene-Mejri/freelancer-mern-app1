@@ -11,7 +11,7 @@ import {
 export const registerHandler = (newUser) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/auth/register",
+      "https://mern-freelancer-app.herokuapp.com/api/auth/register",
       newUser
     );
     dispatch({
@@ -28,7 +28,7 @@ export const registerHandler = (newUser) => async (dispatch) => {
 export const loginHandler = (authUser, history) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/auth/login",
+      "https://mern-freelancer-app.herokuapp.com/api/auth/login",
       authUser
     );
     dispatch({
@@ -66,7 +66,7 @@ export const getAuthUser = () => async (dispatch) => {
         "auth-token": localStorage.getItem("token"),
       },
     };
-    const res = await axios.get("http://localhost:5000/api/auth/user", config);
+    const res = await axios.get("https://mern-freelancer-app.herokuapp.com/api/auth/user", config);
     dispatch({
       type: GET_USER,
       payload: res.data,

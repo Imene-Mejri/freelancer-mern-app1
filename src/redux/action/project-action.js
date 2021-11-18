@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export const getHandler= () => async(dispatch)=>{
    await
-    axios.get('http://localhost:5000/api/auth/client/project/all')
+    axios.get('https://mern-freelancer-app.herokuapp.com/api/auth/client/project/all')
     .then((res)=>
     dispatch({
         type:GET_ALL,
@@ -17,14 +17,14 @@ export const getHandler= () => async(dispatch)=>{
 
 export const addHandler = (newProject)=>async(dispatch)=>{
     await
-    axios.post('http://localhost:5000/api/auth/client/project/add',newProject)
+    axios.post('https://mern-freelancer-app.herokuapp.com/api/auth/client/project/add',newProject)
     .then((res)=>dispatch(getHandler()))
     .catch((error)=>console.log(error))
 }
 
 export const deleteHandler =(id)=>async(dispatch)=>{
     await
-    axios.delete(`http://localhost:5000/api/auth/client/project/delete/${id}`)
+    axios.delete(`https://mern-freelancer-app.herokuapp.com/api/auth/client/project/delete/${id}`)
     .then((res)=>dispatch(getHandler()))
     .catch((error)=>console.log(error))
 }
@@ -32,7 +32,7 @@ export const deleteHandler =(id)=>async(dispatch)=>{
 
 export const editHandler =(id,project)=>async(dispatch)=>{
     await
-    axios.put(`http://localhost:5000/api/auth/client/project/edit/${id}`,project)
+    axios.put(`https://mern-freelancer-app.herokuapp.com/api/auth/client/project/edit/${id}`,project)
     .then((res)=>dispatch(getHandler()))
     .catch((error)=>console.log(error))
 }
