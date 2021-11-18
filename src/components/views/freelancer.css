@@ -1,0 +1,12 @@
+.freelancerContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.fright{
+    width: 10%;
+}
+.fcenter{
+    width: 88%;
+    padding-right: 20px;
+}

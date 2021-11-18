@@ -1,0 +1,12 @@
+.AdminContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.Aright{
+    width: 10%;
+}
+.Acenter{
+    width: 88%;
+    padding-right: 20px;
+}

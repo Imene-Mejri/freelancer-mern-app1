@@ -1,0 +1,40 @@
+.sidebar {
+    position: sticky;
+    float: left;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border: 4px solid White;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+  }
+ 
+  
+  .sidebarWrapper {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+    font-family: 'Titillium Web', sans-serif;
+    
+  }
+  
+  .sidebarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebarIcon {
+    margin-right: 15px;
+  }
+
+  .sidebarListItemText{
+    text-decoration: none;
+  }

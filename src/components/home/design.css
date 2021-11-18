@@ -1,0 +1,163 @@
+.footer {
+   
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color:rgb(29, 67, 84);
+    padding-top: 40px;
+ 
+  }
+  .section3{
+    padding-top: 60px;
+    padding-bottom: 30px;
+   
+    height: 400px;
+    
+    
+  }
+  .Otherdescri{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .Otherdescri h3{
+    max-width: 50%;
+    color:rgb(29, 67, 84);
+    padding-top: 50px;
+    padding-left: 10px;
+    
+
+
+  }
+  
+  .video{
+    max-width: 50%;
+    padding-right: 70px;
+  }
+  h6 {
+    color: white;
+  }
+  .ftco-footer-social{
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+     
+  }
+  .icons{
+    width: 150px;
+    align-content: center;
+    margin-left: 47%;
+    
+  }
+  .ftco-footer-social{
+    color: white;
+  }
+ .footer-copyright  h6{
+    color:white;
+  }
+  .ftco-footer-social li{
+   
+    margin-top: 65px;
+
+
+      letter-spacing: 15px;
+      color:white;
+      -webkit-box-reflect: below 1px linear-dradient(transparent,black) ;
+      Line-height: 0.70em;
+      outline: none;
+      animation: animate 5s linear infinite;
+    }
+    @Keyframes animate
+    {
+      0%,10%,20%,50.1%,60%,65.1%,80%,90%,92.1%,100%
+      {
+          color:white;
+          text-shadow: none;
+      }
+      18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+      {
+          color: white;
+          text-shadow: 0 0 10px rgb(129, 199, 202),
+          0 0 20px rgb(129, 199, 202),
+          0 0 40px rgb(129, 199, 202),
+          0 0 80px rgb(129, 199, 202),
+          0 0 100px rgb(129, 199, 202);
+      }
+    
+    }
+  /*body*/
+  .section2{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .Description{
+    max-width: 50%;
+    padding: 95px;
+   
+  }
+  .Description h1{
+    max-width: 480;
+    
+    color: rgb(29,67,84);
+    
+    }
+    .Description p{
+      
+      color: rgb(101,101,101);
+      size: 60%;
+     
+      margin: 30px;
+      
+      }
+  
+   
+  
+  .image img {
+    height: 550px;
+   
+  }
+ .cr{
+   height: 450px;
+   
+ }
+ .Navbar{
+   position: sticky;  
+   background-color: rgb(29, 67, 84);  
+    
+ }
+ .Description h2 {
+   color: black;
+   margin-right: 30px;
+   padding: 20px;
+  
+ }
+ .desci {
+   color: black;
+   margin-right: 80px;
+ }
+ .Description h4 {
+  margin: 20px;
+   color:black;
+   text-align: initial;
+   text-decoration: ivory;
+  text-size-adjust: 30px;
+ }
+ .Description h6 {
+  margin: 20px;
+  color:gray;
+  text-align: initial;
+  size: 40px;
+}
+.section2{
+  padding-top: 60px;
+  background-color: rgb(241, 253, 247);
+}
+.Carousel{
+  padding-top: 5px;
+
+}
+.Carousel p {
+  color: black;
+  
+  
+}

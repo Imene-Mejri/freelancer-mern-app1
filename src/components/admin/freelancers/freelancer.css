@@ -1,0 +1,30 @@
+.FCl{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    border: dashed blue;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+.FCls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Ftitle{
+    text-align: start;
+    font-size: xx-large;
+    margin-top: 20px;
+}
+.Ffrom{
+    font-size: x-large;
+    color: black;
+}
+.Fobject{
+   margin-top: -20px;
+   color: black;
+}
+.FC{
+    margin-top: 8px;
+}

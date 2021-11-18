@@ -1,0 +1,46 @@
+.AprofileCover{
+    height: 320px;
+    position: relative;
+}
+
+.AprofileCoverImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.AprofileUserImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    border: 3px solid white;
+}
+
+.AprofileInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.AprofileInfoName{
+    font-size: 24px;
+}
+
+.AprofileInfoDesc{
+    font-weight: 300;
+}
+
+.AprofileData{
+    display: flex;
+    justify-content: space-between;
+}
+.Acright{
+    width: 26%;
+}

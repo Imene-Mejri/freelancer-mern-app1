@@ -1,0 +1,29 @@
+.In{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+.Ins{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    text-align: start;
+    font-size: xx-large;
+    margin-top: 20px;
+}
+.from{
+    font-size: x-large;
+    color: black;
+}
+.object{
+   margin-top: -20px;
+   color: black;
+}
+.Ic{
+    margin-top: 8px;
+}

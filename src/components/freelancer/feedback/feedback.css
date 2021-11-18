@@ -1,0 +1,29 @@
+.Fe{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+.Fes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Fetitle{
+    text-align: start;
+    font-size: xx-large;
+    margin-top: 20px;
+}
+.Fefrom{
+    font-size: x-large;
+    color: black;
+}
+.Feobject{
+   margin-top: -20px;
+   color: black;
+}
+.Fec{
+    margin-top: 8px;
+}
