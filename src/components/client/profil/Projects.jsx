@@ -8,7 +8,7 @@ const Freelancers = () => {
   useEffect(() => {
   dispatch(getHandler())
   }, [])
-   const projects = useSelector(state => state.project.project)
+   const projects = useSelector(state => state.project?.project)
     return (
       <div>
         
