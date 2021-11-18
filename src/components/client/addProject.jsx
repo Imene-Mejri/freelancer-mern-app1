@@ -12,15 +12,17 @@ export default function Addproject({}) {
   const [title,settitle]=useState("");
   const [price,setprice]=useState("");
   const [description,setdescription]=useState("");
+  const [builder,setbuilder]=useState("");
   const [projectLink,setprojectLink]=useState("");
   const [dateStart,setdateStart]=useState("");
   const [dateEnd,setdateEnd]=useState("");
   const submissionHandler=()=>{
-    dispatch(addHandler({creator,title, price, description, projectLink, dateStart,dateEnd}))
+    dispatch(addHandler({creator,builder,title, price, description, projectLink, dateStart,dateEnd}))
     setcreator('')
     settitle('')
     setprice('')
     setdescription('')
+    setbuilder('')
     setprojectLink('')
     setdateStart('')
     setdateEnd('')
