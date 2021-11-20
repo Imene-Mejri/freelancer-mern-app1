@@ -26,7 +26,7 @@ export default function AddInnvoice({}) {
       }
     return (
     <div>
-      <div onClick={handleShow}><Add/> click me to ADD Innvoice ... </div>
+      <div onClick={handleShow}><Add/> click me to ADD Innvoice ....</div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header >
           <Modal.Title><h5>Add Innvoice</h5></Modal.Title>
